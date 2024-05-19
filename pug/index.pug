@@ -1,0 +1,196 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title FromBoard Delivery
+        <link href="https://fonts.cdnfonts.com/css/formular" rel="stylesheet">
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/stylename.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+    body 
+        .body__wrapper
+            header.header
+                .container
+                    .header__wrapper
+                        .header__top
+                            .header__logo
+                                a.header__logo-img(href="#")
+                                    img(src="../images/logo.svg", alt="")
+                                a.logo__title(href="#") HealthyCup 
+                            .header__content 
+                                .header__info 
+                                    p.header__text 
+                                    .header__phone 
+                                        a.phone(href="tel:+78001234567") +7 (800) 123 45-67
+                                        p.header__phone-text Звонки по России бесплатны
+                                    button.header__burger-btn(id="burger") 
+                                        span 
+                                        span 
+                                        span 
+            .header__bottom-wrapper
+                .container
+                    .header__burger
+                        .header__bottom
+                            nav.menu(id="nav") 
+                                ul.menu__list 
+                                    li.menu__item 
+                                        a.menu__link.active(href="#calc", data-section="calc") Оставить заявку
+                                    li.menu__item 
+                                        a.menu__link(href="#advantage", data-section="advantage") О нас
+                                    li.menu__item 
+                                        a.menu__link(href="#licence", data-section="licence") Гарантии
+                                    li.menu__item 
+                                        a.menu__link(href="#feedback", data-section="feedback") Отзывы
+                            button.header__btn Оставить заявку
+            .back(id="back")
+            main.main
+                section.calc(id="calc", data-section="calc") 
+                    .container 
+                        .calc__wrapper 
+                            .calc__content 
+                                .calc__info 
+                                    .calc__title HealtyCup — инновационное решение проверки вашего здоровья
+                                    .calc__text HealtyCup это капсула, которая позволяет сделать полный чекап организма в кратчайший срок благодаря инновационному подходу в мире медицины. 
+                                .calc__img 
+                                    img(src="../images/cupppp.jpg", alt="")
+                            .calc__form
+                                .calc__form-info 
+                                    .calc__form-title Оставьте заявку
+                                    .calc__form-text Ответ придёт в течение рабочего дня
+                                .calc__form-inputs 
+                                    input.form__name(type="text", placeholder="Имя", required)
+                                    input(type="text", placeholder="Фамилия", required)
+                                    input(type="tel", placeholder="Отчество", required)
+                                    input(type="text", placeholder="Телефон", required)
+                                    input(type="text", placeholder="Почта", required)
+
+                                    button.send__form Отправить
+                section.advantage(id="advantage", data-section="advantage") 
+                    .container
+                        .section-title.adv__title Наши преимущества
+                        .adver__wrapper 
+                            .adv__item
+                                img(src="../images/notes.svg", alt="").adv__img 
+                                .adv__content 
+                                    .adv__content-title Полное обследование всего организма
+                                    .adv__content-text  Результаты будут у вас в кратчшайщий срок
+                            .adv__item
+                                img(src="images/box.svg", alt="").adv__img 
+                                .adv__content 
+                                    .adv__content-title Скидки и льготы
+                                    .adv__content-text 
+                            .adv__item
+                                img(src="images/delivery.svg", alt="").adv__img
+                                .adv__content 
+                                    .adv__content-title Экономия времени
+                                    .adv__content-text Мы предлагаем быструю и выгодную проверку, чтобы вы могли узнать результаты как можно скорее.
+                            .adv__item
+                                img(src="images/medal.svg", alt="").adv__img
+                                .adv__content 
+                                    .adv__content-title Комфортное и лояльное обслуживание
+                                    .adv__content-text 
+                            .adv__item
+                                img(src="images/pc.svg", alt="").adv__img
+                                .adv__content 
+                                    .adv__content-title Современное оборудование и методы лечения
+                                    .adv__content-text 
+                            .adv__item
+                                img(src="images/safety.svg", alt="").adv__img
+                                .adv__content 
+                                    .adv__content-title Высокий уровень обслуживания и комфортные условия
+                                    .adv__content-text  
+                section.licence(id="licence", data-section="licence") 
+                    .container
+                        .licence__text-wrapper
+                            .section-title.licence__title Гарантии качества
+                            .licence__text Наши гарантии качества включают в себя полный спектр документов, необходимых для правильных проверок, а также для успешной работоспособности на мировом рынке. Мы предоставляем вам надёжность и уверенность
+                        .licence__content
+                            .licence__item 
+                                .licence__img 
+                                    img(src="images/svRF.svg", alt="")
+                                .licence__item-text Свидетельство о регистрации в РФ
+                            .licence__item 
+                                .licence__img 
+                                    img(src="images/svUSA.svg", alt="")
+                                .licence__item-text Свидетельство о регистрации в США
+                            .licence__item 
+                                .licence__img 
+                                    img(src="images/svChina.svg", alt="")
+                                .licence__item-text Свидетельство о регистрации в Китае
+                            .licence__item 
+                                .licence__img 
+                                    img(src="images/svBrit.svg", alt="")
+                                .licence__item-text Свидетельство о регистрации в Великобритнии
+                        button.licence__btn Показать больше документов
+                section.feedback(id="feedback", data-section="feedback") 
+                    .container
+                        .section-title.feedback__title  Отзывы
+                        .swiper 
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    img(src="images/quote.svg", alt="").quote 
+                                    .swiper__item 
+                                        .swiper__text Ждём ваши отзывы!
+                                        .swiper__name 
+                                .swiper-slide
+                                    img(src="images/quote.svg", alt="").quote 
+                                    .swiper__item 
+                                        .swiper__text Ждём ваши отзывы!
+                                        .swiper__name 
+                                .swiper-slide
+                                    img(src="images/quote.svg", alt="").quote 
+                                    .swiper__item 
+                                        .swiper__text Ждём ваши отзывы!
+                                        .swiper__name 
+                                .swiper-slide
+                                    img(src="images/quote.svg", alt="").quote 
+                                    .swiper__item 
+                                        .swiper__text Ждём ваши отзывы!
+                                        .swiper__name 
+                                .swiper-slide
+                                    img(src="images/quote.svg", alt="").quote 
+                                    .swiper__item 
+                                        .swiper__text Ждём ваши отзывы!
+                                        .swiper__name 
+                        .swiper-button-prev-un
+                            img(src="../images/prevbtn.svg", alt="")
+                        .swiper-button-next-un
+                            img(src="../images/nextbtn.svg", alt="")
+                section.form 
+                    .container 
+                        .form__wrapper 
+                            .section-title.form__title  Остались вопросы?
+                            .form__content 
+                                .form__inputs 
+                                    input(type="text", placeholder="Имя", required)
+                                    input(type="text", placeholder="Почта", required)
+                                    input(type="text", placeholder="Телефон", required)
+                                    input(type="text", placeholder="Тема вопроса", required)
+                                    textarea.form__textarea(type="text", placeholder="Сообщение...", required)
+                                button.form__btn Отправить
+                section.footer 
+                    .container--footer 
+                        .footer__wrapper 
+                            .footer__content 
+                                .footer__logo-wrapper 
+                                    .footer__logo 
+                                        img.logo-footer(src="../images/footerLogo.svg", alt="")
+                                        .footer__logo-name HealthyCup
+                                    .footer__logo-text 2023 © Ни одно право не защищено, копируйте сколько влезет 
+                                nav.menu 
+                                    ul.menu__list 
+                                        li.menu__item 
+                                            a.menu__link.menu__link--footer(href="#calc") Оставить заявку
+                                        li.menu__item 
+                                            a.menu__link.menu__link--footer(href="#adv") О нас
+                                        li.menu__item 
+                                            a.menu__link.menu__link--footer(href="#licence") Гарантии
+                                        li.menu__item 
+                                            a.menu__link.menu__link--footer(href="#feedback") Отзывы
+                                .footer__phone 
+                                    a.phone--footer(href="tel:+78001234567") +7 (800) 123 45-67
+                                    p.footer__phone-text Звонки по России бесплатны
+                            .footer__info НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что цены носят информационный и ознакомительный характер, а значит ни в какой мере не являются публичной офертой, которая определена в ст. 437 ГК РФ. Вся информация на сайте может содержать неточности, орфографические и иные ошибки, она не является полной, окончательно и исчерпывающей
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        script(src="js/main.js")
